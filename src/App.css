@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('https://t3.ftcdn.net/jpg/12/21/17/20/360_F_1221172007_Nvlyvgc370tSRj6mCOaWxy6gqhS19YIW.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,18 +12,15 @@ body {
   text-align: center;
   padding: 10px;
 }
-
 .main-title {
   font-size: 3rem;
   color: #201e1e;
   text-shadow: 2px 2px 4px #333;
   margin-bottom: 20px;
 }
-
 .search-form {
   margin-bottom: 30px;
 }
-
 .search-input {
   padding: 12px;
   width: 280px;
@@ -34,7 +30,6 @@ body {
   margin-right: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
-
 .search-button {
   padding: 12px 24px;
   font-size: 1.1rem;
@@ -48,7 +43,6 @@ body {
 .search-button:hover {
   background-color: #ffe17d;
 }
-
 .recipe-list {
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +50,6 @@ body {
   gap: 25px;
   margin-top: 20px;
 }
-
 .recipe-card {
   background-color: #fffdf5;
   border-radius: 15px;
@@ -70,18 +63,15 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
-
 .recipe-card img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-
 .recipe-card h3 {
   font-size: 1.1rem;
   margin: 10px 0;
 }
-
 .recipe-card button {
   margin: 5px;
   padding: 8px 12px;
@@ -91,11 +81,9 @@ body {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
 .recipe-card button:hover {
   background-color: #d4ede0;
 }
-
 .modal {
   position: fixed;
   top: 0;
@@ -108,8 +96,6 @@ body {
   align-items: center;
   z-index: 10;
 }
-
-/* Merged & cleaned modal-content */
 .modal-content {
   background: #fff;
   padding: 30px;
@@ -121,21 +107,17 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
-
 .modal-content h2 {
   margin-top: 0;
 }
-
 .modal-content img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
 }
-
 .modal-content ul {
   padding-left: 20px;
 }
-
 .modal-content button {
   margin-top: 20px;
   background-color: #f11e07;
@@ -145,19 +127,14 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
-
 .modal-content button:hover {
   background-color: #f3e2e2;
 }
-
-/* Stylish section headings */
 .modal-content h4 {
   margin-top: 20px;
   color: #2e8b57;
   font-size: 1.2em;
 }
-
-/* Ingredients block */
 .ingredients-box {
   background-color: #fefbea;
   padding: 15px;
@@ -166,8 +143,6 @@ body {
   border: 1px solid #f4d35e;
   font-family: 'Segoe UI', sans-serif;
 }
-
-/* Instructions block */
 .instructions-box {
   background-color: #9ab7b0;
   padding: 15px;
