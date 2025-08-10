@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://t3.ftcdn.net/jpg/12/21/17/20/360_F_1221172007_Nvlyvgc370tSRj6mCOaWxy6gqhS19YIW.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  padding: 10px;
+}
+
+.main-title {
+  font-size: 3rem;
+  color: #201e1e;
+  text-shadow: 2px 2px 4px #333;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  margin-bottom: 30px;
+}
+
+.search-input {
+  padding: 12px;
+  width: 280px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.search-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #ffe17d;
+}
+
+.recipe-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  background-color: #fffdf5;
+  border-radius: 15px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.recipe-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.recipe-card button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #82ccef;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.recipe-card button:hover {
+  background-color: #d4ede0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Merged & cleaned modal-content */
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  max-width: 700px;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-radius: 15px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+}
+
+.modal-content button {
+  margin-top: 20px;
+  background-color: #f11e07;
   color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content button:hover {
+  background-color: #f3e2e2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Stylish section headings */
+.modal-content h4 {
+  margin-top: 20px;
+  color: #2e8b57;
+  font-size: 1.2em;
+}
+
+/* Ingredients block */
+.ingredients-box {
+  background-color: #fefbea;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f4d35e;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Instructions block */
+.instructions-box {
+  background-color: #9ab7b0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #b2dfdb;
+  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
 }
